@@ -1,0 +1,13 @@
+---
+version: '3.7'
+services:
+
+  odoo:
+    image: x0rzkov/odoo:alpine3.10
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - 8080:8080
+    # volumes:
+    # -
