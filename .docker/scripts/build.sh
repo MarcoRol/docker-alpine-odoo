@@ -37,8 +37,8 @@ apk add --no-cache \
 
 apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing wkhtmltopdf
 apk add --no-cache xvfb ttf-dejavu ttf-freefont fontconfig dbus
-cp bin/wkhtmltox.sh /usr/local/bin/wkhtmltoimage
-cp python-ldap.patch /tmp/setup.cfg.diff
+
+cp /opt/python-ldap.patch /tmp/setup.cfg.diff
 ln /usr/local/bin/wkhtmltoimage /usr/local/bin/wkhtmltopdf
 
 apk add --no-cache --virtual .build-deps \
